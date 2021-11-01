@@ -16,9 +16,9 @@
 <body class="bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto">
+            <div class="col-lg-8 col-xl-6 mx-auto">
                 <div class="card card-body mt-5">
-                    <h1 class="heading text-info text-center">PUCIT Aggregate Calculaor</h1>
+                    <h1 class="heading text-info text-center">PUCIT Aggregate Calculator</h1>
                     <form class="aggregate-form my-2">
 
                         <div class="my-3">
@@ -36,6 +36,16 @@
                             </div>
                         </div>
                         <div class="my-3">
+                            <label for="hafiz-e-Quran" class="form-label">Hafiz-e-Quran?</label>
+                            <div class="form-text d-inline ms-1">If Yes, 20 marks will be added.</div>
+                            <select id="hafiz-e-Quran" class="form-select">
+                                <option value="0" selected>No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+
+                        </div>
+                        <!-- <div class="my-3">
                             <div class="input-group">
                                 <span class="input-group-text">Hafiz-e-Quran?</span>
                                 <select id="hafiz-e-Quran" class="form-select">
@@ -43,7 +53,7 @@
                                     <option value="1">Yes</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="my-3 d-grid">
                             <input type="submit" value="Calculate" class="btn btn-primary">
                         </div>
@@ -51,14 +61,16 @@
 
                     <div class="result">
                         <h5 class="heading text-success display-6">Result</h5>
-                        <div class="my-3">
+                        <!-- <div class="my-3">
                             <div class="input-group">
                                 <span class="input-group-text">Your aggregate is:</span>
                                 <input type="number" class="form-control" id="result" disabled>
                             </div>
+                        </div> -->
+                        <div class="alert alert-dark" role="alert">
+                            Your Aggregate is: <span class="text-primary fw-bold fs-5 ms-2" id="output"></span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
